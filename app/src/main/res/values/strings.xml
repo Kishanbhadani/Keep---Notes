@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Keep-Note</string>
+    <string name="add">+</string>
+    <string name="helpCnt">Add Notes which is useful for you to store and reminder the message or information.
+        Define the information to create note, update note and also delete note based on the user requirement it\'s important to all to us more in deeply defining. \'+\' action more option > Add Notes or \'+\' action more option > Help center. provide the information that navigate to one side to another side based on the use.      </string>
+</resources>

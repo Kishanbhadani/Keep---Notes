@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyleNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/NoNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Empty Note"
+            android:fontFamily="serif-monospace"
+            android:textSize="24dp">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:textSize="14dp"
+            android:text="Nothing Found!">
+        </TextView>
+        <Button
+            android:id="@+id/createBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTint="@color/Note_Title"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Create Note">
+        </Button>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fadeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#625FC5"
+        android:text="Close"
+        app:icon="@drawable/ic_baseline_add_circle_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+    </com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fadeAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/fabColor"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@id/fadeBtn"
+        app:layout_constraintEnd_toEndOf="@id/fadeBtn"
+        android:src="@drawable/baseline_note_add_24"
+        tools:ignore="MissingConstraints">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <TextView
+            android:id="@+id/fadeAddTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Add Note"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/fadeAdd"
+            app:layout_constraintEnd_toStartOf="@id/fadeAdd"
+            app:layout_constraintTop_toTopOf="@id/fadeAdd"></TextView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fadeHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="@color/fabColor"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toTopOf="@id/fadeAdd"
+            app:layout_constraintEnd_toEndOf="@id/fadeAdd"
+            app:layout_constraintStart_toStartOf="@id/fadeAdd"
+            android:src="@drawable/baseline_help_24">
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <TextView
+            android:id="@+id/fadeHelpTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Help"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/fadeHelp"
+            app:layout_constraintEnd_toStartOf="@id/fadeHelp"
+            app:layout_constraintTop_toTopOf="@id/fadeHelp"></TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
