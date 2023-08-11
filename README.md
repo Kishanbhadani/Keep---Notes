@@ -44,9 +44,9 @@ The **Keep-Note** app is a powerful tool designed to help you organize and manag
 
 4. Utilize the daily planner to plan your day and stay productive.
 
-   ![Keep-Note App Logo](https://github.com/Kishanbhadani/Keep---Notes/blob/master/WhatsApp%20Image%202023-08-11%20at%204.37.30%20PM.jpeg)
-   ![Alt Text](https://github.com/Kishanbhadani/Keep---Notes/blob/master/WhatsApp%20Image%202023-08-11%20at%204.37.31%20PM%20(1).jpeg)
-   ![Alt Text](https://github.com/Kishanbhadani/Keep---Notes/blob/master/WhatsApp%20Image%202023-08-11%20at%204.37.31%20PM%20(2).jpeg)
+   ![Keep-Note App Logo](https://github.com/Kishanbhadani/Keep---Notes/blob/master/app/src/main/res/drawable/WhatsApp%20Image%202023-08-11%20at%204.37.30%20PM.png)
+   ![Alt Text](https://github.com/Kishanbhadani/Keep---Notes/blob/master/app/src/main/res/drawable/WhatsApp%20Image%202023-08-11%20at%204.37.31%20PM%20(2).png)
+   ![Alt Text](https://github.com/Kishanbhadani/Keep---Notes/blob/master/WhatsApp%20Image%202023-08-11%20at%204.37.30%20PM.png)
 
 
 ## Contributing
